@@ -36,14 +36,14 @@ public/app.js       Client: screen routing, canvas drawing + sync, chat, timers.
   (12s to choose, otherwise the first option is auto-picked). The chosen
   word is permanently removed from the room's word bank — it can never
   reappear.
-- **Drawing phase**: 30 seconds. Drawer's strokes stream to everyone else via
+- **Drawing phase**: 60 seconds. Drawer's strokes stream to everyone else via
   `drawStep`/`clearCanvas` socket events; non-drawers' canvases are locked.
 - **Guessing**: non-drawers guess in chat. An exact, case-insensitive match
   awards the guesser `max(timeLeft * 3, 10)` points and the drawer a flat
   +15 bonus, and is announced to the room without leaking the actual word.
   Drawers cannot chat during their own turn. The round ends early once every
   connected non-drawer has guessed correctly.
-- **Round end**: the word is revealed for 4 seconds, then the next turn
+- **Round end**: the word is revealed for 10 seconds, then the next turn
   begins automatically.
 - **Game end**: once the word bank is exhausted, final scores are shown.
 
