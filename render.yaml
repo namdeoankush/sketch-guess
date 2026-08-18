@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: sketch-guess
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true

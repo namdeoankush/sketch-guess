@@ -1,0 +1,17 @@
+{
+  "name": "sketch-guess",
+  "version": "1.0.0",
+  "description": "Real-time online multiplayer word-guessing drawing game (skribbl.io-style) built with Node.js, Express, and Socket.io",
+  "private": true,
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  }
+}
