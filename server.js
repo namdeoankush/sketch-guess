@@ -14,11 +14,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // ---------------------------------------------------------------------------
 // Config
 // ---------------------------------------------------------------------------
-const DRAW_TIME = 30;          // seconds per drawing turn
+const DRAW_TIME = 60;          // seconds per drawing turn
 const CHOOSE_TIME = 12;        // seconds a drawer has to pick a word
-const ROUND_END_DELAY = 4000;  // ms the correct word is shown before next turn
+const ROUND_END_DELAY = 10000;  // ms the correct word is shown before next turn
 const MIN_PLAYERS_TO_START = 2;
-const WORD_CHOICES = 3;
+const WORD_CHOICES = 4;
 
 const DEFAULT_WORDS = [
   'apple', 'banana', 'guitar', 'elephant', 'mountain', 'rainbow', 'bicycle',
